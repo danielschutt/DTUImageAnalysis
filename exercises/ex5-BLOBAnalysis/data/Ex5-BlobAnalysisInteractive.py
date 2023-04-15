@@ -7,7 +7,7 @@ from skimage import data, filters, measure, morphology, io, color
 
 
 def interactive_blobs():
-    in_dir = "data/"
+    in_dir = "exercises/ex5-BLOBAnalysis/data/"
     im_name = "lego_4_small.png"
 
     img_org = io.imread(in_dir + im_name)
@@ -20,7 +20,7 @@ def interactive_blobs():
     labels = measure.label(mask)
 
     fig = px.imshow(img, binary_string=True)
-    fig.update_traces(hoverinfo='skip') # hover is only for label info
+    fig.update_traces(hoverinfo='skip')  # hover is only for label info
 
     props = measure.regionprops(labels, img)
     properties = ['area', 'eccentricity', 'perimeter', 'intensity_mean']
@@ -44,4 +44,3 @@ def interactive_blobs():
 
 if __name__ == '__main__':
     interactive_blobs()
-
