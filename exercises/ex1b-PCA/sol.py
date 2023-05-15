@@ -83,8 +83,10 @@ in_dir = "exercises/ex1b-PCA/data/"
 txt_name = "irisdata.txt"
 iris_data = np.loadtxt(in_dir + txt_name, comments="%")
 N = 50
+
 # x is a matrix with 50 rows and 4 columns
 x = iris_data[0:50, 0:4]
+
 
 sep_l = x[:, 0]
 sep_w = x[:, 1]
@@ -108,6 +110,6 @@ vectors_pca = pca.components_
 
 data_transform = pca.transform(x)
 
-# print(exp_var_ratio)
+print(exp_var_ratio)
 print(vectors)
 print(vectors_pca.T)
