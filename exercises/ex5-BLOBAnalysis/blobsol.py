@@ -30,7 +30,7 @@ from skimage.color import label2rgb
 import imagecodecs
 
 
-def show(input_img):
+def show(input_img): 
     io.imshow(input_img)
     io.show()
 

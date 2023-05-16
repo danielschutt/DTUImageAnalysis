@@ -330,4 +330,4 @@ in_dir = "exercises/testExamFUnTimes/data/"
 im_name = "rocket.png"
 im_org = io.imread(in_dir + im_name)
 
-ex13()
+ex2()

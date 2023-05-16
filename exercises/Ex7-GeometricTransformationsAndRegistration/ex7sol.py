@@ -142,7 +142,7 @@ src_img = io.imread(in_dir + im_name1)
 src = np.array([[588, 274], [328, 179], [134, 398], [260, 525], [613, 448]])
 
 
-dst_img = io.imread(in_dir + im_name2)
+dst_img = io.imread(in_dir + im_name2) 
 # Destination alndmarks found manually
 dst = np.array([[636, 310], [377, 167], [200, 276], [279, 439], [597, 451]])
 print(calcAlignment(src, dst))
